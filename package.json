@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/dvkhangIT/nodejs-basic#readme",
   "dependencies": {
-    "express": "4.18.2"
+    "express": "4.18.2",
+    "mysql2": "^3.9.1",
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {
     "dotenv": "^16.4.1",
