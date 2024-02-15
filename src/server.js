@@ -13,13 +13,6 @@ app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 configViewEngine(app);
 app.use('/', webRoutes);
-
-// test connection
-connection.query('SELECT * FROM Users', function (err, results, fields) {
-  //   console.log(results);
-  //   console.log(fields);
-});
-
 app.listen(port, hostname, () => {
   console.log(`Example app listening on port http://${hostname}:${port}`);
 });

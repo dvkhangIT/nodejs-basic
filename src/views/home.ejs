@@ -8,30 +8,26 @@
   </head>
   <body>
     <div class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <a class="active" href="/">Home</a>
+      <a href="/create">Create Users</a>
     </div>
-    <form class="form-add-new" action="/create-user" method="post">
-      <fieldset>
-        <legend>Add new user</legend>
-        <div class="input-group">
-          <label for="">Email</label>
-          <input type="text" name="email" />
-        </div>
-        <div class="input-group">
-          <label for="">Name</label>
-          <input type="text" name="name" />
-        </div>
-        <div class="input-group">
-          <label for="">City</label>
-          <input type="text" name="city" />
-        </div>
-        <div class="">
-          <button>Save</button>
-        </div>
-      </fieldset>
-    </form>
+    <div class="table-container">
+      <h2 class="title">List user</h2>
+      <table id="customers">
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Name</th>
+          <th>City</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr></tr>
+      </table>
+    </div>
   </body>
 </html>
