@@ -3,7 +3,7 @@ const { getAllUsers } = require('../services/CRUDService');
 
 const getHomePage = async (req, res) => {
   let results = await getAllUsers();
-  console.log(`getHomePage ~ results:`, results);
+  //   console.log(`getHomePage ~ results:`, results);
   return res.render('home.ejs', { listUser: results });
 };
 const getDetailPage = (req, res) => {

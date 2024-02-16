@@ -14,7 +14,6 @@
     <div class="table-container">
       <h2 class="title">List user</h2>
       <table id="customers">
-        <%=JSON.stringify(listUser)%>
         <tr>
           <th>ID</th>
           <th>Email</th>
@@ -22,17 +21,30 @@
           <th>City</th>
           <th>Actions</th>
         </tr>
+        <!-- <% for (let i = 0; i < listUser.length; i++) {%>
         <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-          <td>Germany</td>
+          <td><%=listUser[i].id %></td>
+          <td><%=listUser[i].email %></td>
+          <td><%=listUser[i].name %></td>
+          <td><%=listUser[i].city %></td>
           <td>
             <button>Edit</button>
             <button>Delete</button>
           </td>
         </tr>
-        <tr></tr>
+        <%} %> -->
+        <% listUser.forEach((user,index)=> { %>
+        <tr>
+          <td><%=user.id %></td>
+          <td><%=user.email %></td>
+          <td><%=user.name %></td>
+          <td><%=user.city %></td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <% }); %>
       </table>
     </div>
   </body>
