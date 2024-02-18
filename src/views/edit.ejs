@@ -11,9 +11,13 @@
       <a href="/">Home</a>
       <a class="" href="/create">Create Users</a>
     </div>
-    <form class="form-add-new" action="/create-user" method="post">
+    <form class="form-add-new" action="/update-user" method="post">
       <fieldset>
         <legend>Update user</legend>
+        <div class="input-group">
+          <label for="">ID</label>
+          <input type="text" name="userId" value="<%=userEdit.id %>" />
+        </div>
         <div class="input-group">
           <label for="">Email</label>
           <input type="text" name="email" value="<%=userEdit.email %>" />
